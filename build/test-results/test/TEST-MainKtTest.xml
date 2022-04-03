@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="MainKtTest" tests="34" skipped="0" failures="0" errors="0" timestamp="2022-04-03T14:59:21" hostname="USER-ПК" time="0.039">
+  <properties/>
+  <testcase name="calculate_commission_mastercard_or_maestro_when_count_605_700" classname="MainKtTest" time="0.006"/>
+  <testcase name="calculate_commission_when_transfer_100_000_000_and_last_transfer_10_000_type_card_Visa" classname="MainKtTest" time="0.015"/>
+  <testcase name="calculate_commission_when_transfer_10_000_and_last_transfer_100000_type_card_empty" classname="MainKtTest" time="0.001"/>
+  <testcase name="show_ending_when_kopecks_73451" classname="MainKtTest" time="0.0"/>
+  <testcase name="normal_parameters_for_the_second_transfer" classname="MainKtTest" time="0.001"/>
+  <testcase name="limit_exceeded_with_VKPay" classname="MainKtTest" time="0.0"/>
+  <testcase name="calculate_commission_when_transfer_8_000_000_and_last_transfer_100_000_000_type_card_Mir" classname="MainKtTest" time="0.0"/>
+  <testcase name="limit_exceeded_normal_status_another_card" classname="MainKtTest" time="0.001"/>
+  <testcase name="limit_exceeded_normal_status_VKPay" classname="MainKtTest" time="0.0"/>
+  <testcase name="calculate_commission_when_transfer_100_000_and_last_transfer_10_000_type_card_Mastercard" classname="MainKtTest" time="0.0"/>
+  <testcase name="calculate_commission_mastercard_or_maestro_when_count_1_000" classname="MainKtTest" time="0.0"/>
+  <testcase name="calculate_commission_VKPay_when_count_1256" classname="MainKtTest" time="0.0"/>
+  <testcase name="calculate_commission_when_transfer_100_000_000_and_last_transfer_10_000_type_card_Mastercard" classname="MainKtTest" time="0.001"/>
+  <testcase name="limit_exceeded_with_another" classname="MainKtTest" time="0.0"/>
+  <testcase name="calculate_commission_another_card" classname="MainKtTest" time="0.001"/>
+  <testcase name="calculate_commission_when_transfer_10_000_000_and_last_transfer_10_000_type_card_Visa" classname="MainKtTest" time="0.001"/>
+  <testcase name="calculate_commission_when_transfer_100_000_000_and_last_transfer_10_000_type_card_Mir" classname="MainKtTest" time="0.0"/>
+  <testcase name="show_ending_when_kopecks_12" classname="MainKtTest" time="0.0"/>
+  <testcase name="show_ending_when_kopecks_33" classname="MainKtTest" time="0.0"/>
+  <testcase name="abnormal_parameters_for_the_first_transfer" classname="MainKtTest" time="0.001"/>
+  <testcase name="calculate_commission_when_transfer_10_000_and_last_transfer_0_type_card_empty" classname="MainKtTest" time="0.0"/>
+  <testcase name="calculate_commission_when_transfer_100_000_000_and_last_transfer_0_type_card_Mastercard" classname="MainKtTest" time="0.0"/>
+  <testcase name="calculate_commission_Visa_and_Mir_when_count_3_000_000" classname="MainKtTest" time="0.0"/>
+  <testcase name="calculate_commission_when_transfer_8_000_000_and_last_transfer_10_000_type_card_Mastercard" classname="MainKtTest" time="0.001"/>
+  <testcase name="limit_exceeded_with_totalTransferred_min_and_another_card" classname="MainKtTest" time="0.0"/>
+  <testcase name="limit_exceeded_with_totalTransferredVK_max" classname="MainKtTest" time="0.0"/>
+  <testcase name="limit_exceeded_with_totalTransferredVK_min" classname="MainKtTest" time="0.0"/>
+  <testcase name="calculate_commission_when_transfer_8_000_000_and_last_transfer_10_000_type_card_Mir" classname="MainKtTest" time="0.0"/>
+  <testcase name="calculate_commission_when_transfer_10_000_and_last_transfer_0_type_card_Visa" classname="MainKtTest" time="0.0"/>
+  <testcase name="abnormal_parameters_for_the_second_transfer" classname="MainKtTest" time="0.001"/>
+  <testcase name="calculate_commission_Visa_and_Mir_when_count_1_000" classname="MainKtTest" time="0.0"/>
+  <testcase name="calculate_commission_when_transfer_8_000_000_and_last_transfer_100_000_000_type_card_Mastercard" classname="MainKtTest" time="0.001"/>
+  <testcase name="limit_exceeded_with_totalTransferred_max_and_another_card" classname="MainKtTest" time="0.0"/>
+  <testcase name="normal_parameters_for_the_first_transfer" classname="MainKtTest" time="0.0"/>
+  <system-out><![CDATA[Сумма перевода составляет: 100000000 копеек
+Превышен максимум переводов за месяц!
+Сумма перевода составляет: 10000 копеек
+Сумма перевода составляет: 10000 копеек
+Превышен максимум переводов за месяц!
+Сумма перевода составляет: 8000000 копеек
+Превышен максимум переводов за месяц!
+Сумма перевода составляет: 100000 копеек
+Сумма перевода составляет: 100000000 копеек
+Превышен максимум переводов за месяц!
+Превышен максимум единовременного перевода!
+Сумма перевода составляет: 1000 копеек
+Сумма перевода составляет: 10000000 копеек
+Сумма перевода составляет: 100000000 копеек
+Превышен максимум переводов за месяц!
+Сумма перевода составляет: 10000658 копеек
+Превышен максимум переводов за месяц!
+Сумма перевода составляет: 10000 копеек
+Сумма перевода составляет: 100000000 копеек
+Превышен максимум переводов за месяц!
+Сумма перевода составляет: 8000000 копеек
+Сумма перевода составляет: 8000000 копеек
+Сумма перевода составляет: 10000 копеек
+Сумма перевода составляет: 99000658 копеек
+Превышен максимум переводов за месяц!
+Сумма перевода составляет: 8000000 копеек
+Превышен максимум переводов за месяц!
+Сумма перевода составляет: 10000 копеек
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

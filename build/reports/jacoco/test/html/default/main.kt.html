@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="ru"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>main.kt</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">homeworkKt_04_functions</a> &gt; <a href="index.source.html" class="el_package">default</a> &gt; <span class="el_source">main.kt</span></div><h1>main.kt</h1><pre class="source lang-java linenums">fun main() {
+<span class="nc" id="L2">    val typeCardVK = &quot;VKPay&quot;</span>
+<span class="nc" id="L3">    val typeCardMastercard = &quot;Mastercard&quot;</span>
+<span class="nc" id="L4">    val typeCardMaestro = &quot;Maestro&quot;</span>
+<span class="nc" id="L5">    val typeCardMir = &quot;Mir&quot;</span>
+<span class="nc" id="L6">    val typeCardVisa = &quot;Visa&quot;</span>
+<span class="nc" id="L7">    val lastTransfer = 25_000</span>
+
+<span class="nc" id="L9">    val transfer1 = 10_000</span>
+<span class="nc" id="L10">    val transfer2 = 600_000</span>
+//    val transfer3 = 8_000_000
+//    val transfer4 = 20_000_000
+
+<span class="nc" id="L14">    println(calculateCommission(amountTransfer = transfer1,lastTransfer = lastTransfer))</span>
+<span class="nc" id="L15">    println(calculateCommission(typeCardMir, transfer2, lastTransfer))</span>
+//    println(calculateCommission(typeCardMastercard, transfer3, lastTransfer))
+//    println(calculateCommission(typeCardVK, transfer4, lastTransfer))
+<span class="nc" id="L18">}</span>
+
+<span class="fc" id="L20">fun calculateCommission(typeCard: String = &quot;VKPay&quot;, amountTransfer: Int, lastTransfer: Int): String {</span>
+<span class="fc" id="L21">    println(&quot;РЎСѓРјРјР° РїРµСЂРµРІРѕРґР° СЃРѕСЃС‚Р°РІР»СЏРµС‚: ${showKopecksToString(amountTransfer)}&quot;)</span>
+<span class="fc bfc" id="L22" title="All 2 branches covered.">    if (checkTheLimit(amountTransfer, typeCard, lastTransfer)) return &quot;&quot;</span>
+<span class="fc bfc" id="L23" title="All 4 branches covered.">    val commission = when(typeCard) {</span>
+<span class="fc" id="L24">        &quot;Mastercard&quot;,&quot;Maestro&quot; -&gt; showKopecksToString(calculateCommissionMastercardMaestro(amountTransfer))</span>
+<span class="fc" id="L25">        &quot;Mir&quot;, &quot;Visa&quot; -&gt; showKopecksToString(calculateCommissionVisaMir(amountTransfer))</span>
+<span class="fc" id="L26">        &quot;VKPay&quot; -&gt; showKopecksToString(calculateCommissionVKPay(amountTransfer))</span>
+<span class="fc" id="L27">        else -&gt; &quot;Р’РІРµРґРµРЅРЅР°СЏ РєР°СЂС‚Р° РЅР° РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ!&quot;</span>
+    }
+<span class="fc" id="L29">    return &quot;РљРѕРјРёСЃСЃРёСЏ РІ РєРѕРїРµР№РєР°С… СЃРѕСЃС‚Р°РІР»СЏРµС‚: $commission&quot;</span>
+}
+
+fun checkTheLimit(count: Int, typeCard: String, lastTransfer: Int): Boolean {
+<span class="fc bfc" id="L33" title="All 4 branches covered.">    if (typeCard == &quot;VKPay&quot; &amp;&amp; (lastTransfer + count) &gt; 4_000_000) {</span>
+<span class="fc" id="L34">        println(&quot;РџСЂРµРІС‹С€РµРЅ РјР°РєСЃРёРјСѓРј РїРµСЂРµРІРѕРґРѕРІ Р·Р° РјРµСЃСЏС†!&quot;)</span>
+<span class="fc" id="L35">        return true</span>
+<span class="fc bfc" id="L36" title="All 2 branches covered.">    } else if ((lastTransfer + count) &gt; 60_000_000){</span>
+<span class="fc" id="L37">        println(&quot;РџСЂРµРІС‹С€РµРЅ РјР°РєСЃРёРјСѓРј РїРµСЂРµРІРѕРґРѕРІ Р·Р° РјРµСЃСЏС†!&quot;)</span>
+<span class="fc" id="L38">        return true</span>
+    }
+
+<span class="pc bpc" id="L41" title="1 of 4 branches missed.">    if (typeCard == &quot;VKPay&quot; &amp;&amp; count &gt; 1_500_000) {</span>
+<span class="nc" id="L42">        println(&quot;РџСЂРµРІС‹С€РµРЅ РјР°РєСЃРёРјСѓРј РµРґРёРЅРѕРІСЂРµРјРµРЅРЅРѕРіРѕ РїРµСЂРµРІРѕРґР°!&quot;)</span>
+<span class="nc" id="L43">        return true</span>
+<span class="fc bfc" id="L44" title="All 2 branches covered.">    } else if (count &gt; 15_000_000){</span>
+<span class="fc" id="L45">        println(&quot;РџСЂРµРІС‹С€РµРЅ РјР°РєСЃРёРјСѓРј РµРґРёРЅРѕРІСЂРµРјРµРЅРЅРѕРіРѕ РїРµСЂРµРІРѕРґР°!&quot;)</span>
+<span class="fc" id="L46">        return true</span>
+    }
+
+<span class="fc" id="L49">    return false</span>
+}
+
+fun calculateCommissionVisaMir(count: Int): Int {
+<span class="fc" id="L53">    val minimalCommission = 3_500</span>
+<span class="fc" id="L54">    val commission = (count * 75 / 10_000)</span>
+<span class="fc bfc" id="L55" title="All 2 branches covered.">    return if (commission &gt; minimalCommission) commission else minimalCommission</span>
+}
+
+fun calculateCommissionMastercardMaestro(count: Int): Int {
+<span class="fc bfc" id="L59" title="All 6 branches covered.">    return if (count in 30_000..7_500_000) 0 else (count * 6 / 1_000) + 20</span>
+}
+
+fun calculateCommissionVKPay(count: Int): Int {
+<span class="fc" id="L63">    return 0</span>
+}
+
+fun showKopecksToString(kopecks: Int): String {
+    val resultString: String
+
+<span class="pc bpc" id="L69" title="1 of 4 branches missed.">    return if (kopecks % 10 == 1 &amp;&amp; kopecks != 11) {</span>
+<span class="fc" id="L70">        &quot;$kopecks РєРѕРїРµР№РєР°&quot;</span>
+<span class="pc bpc" id="L71" title="2 of 14 branches missed.">    } else if (kopecks % 10 in 2..4 &amp;&amp; kopecks &gt; 20 || kopecks in 2..4) {</span>
+<span class="fc" id="L72">        &quot;$kopecks РєРѕРїРµР№РєРё&quot;</span>
+    } else {
+<span class="fc" id="L74">        &quot;$kopecks РєРѕРїРµРµРє&quot;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
