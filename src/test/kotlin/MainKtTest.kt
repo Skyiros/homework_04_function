@@ -11,7 +11,7 @@ class MainKtTest {
         val typeCard = "Mir"
 
         val result = calculateCommission(amountTransfer = transfer2,lastTransfer = lastTransfer, typeCard = typeCard)
-        assertEquals("" , result)
+        assertEquals("Тут ошибка" , result)
     }
 
     @Test
