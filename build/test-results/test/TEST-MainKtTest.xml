@@ -1,36 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MainKtTest" tests="34" skipped="0" failures="0" errors="0" timestamp="2022-04-03T14:59:21" hostname="USER-ПК" time="0.039">
+<testsuite name="MainKtTest" tests="34" skipped="0" failures="1" errors="0" timestamp="2022-04-03T15:16:05" hostname="USER-ПК" time="0.043">
   <properties/>
   <testcase name="calculate_commission_mastercard_or_maestro_when_count_605_700" classname="MainKtTest" time="0.006"/>
-  <testcase name="calculate_commission_when_transfer_100_000_000_and_last_transfer_10_000_type_card_Visa" classname="MainKtTest" time="0.015"/>
+  <testcase name="calculate_commission_when_transfer_100_000_000_and_last_transfer_10_000_type_card_Visa" classname="MainKtTest" time="0.014"/>
   <testcase name="calculate_commission_when_transfer_10_000_and_last_transfer_100000_type_card_empty" classname="MainKtTest" time="0.001"/>
   <testcase name="show_ending_when_kopecks_73451" classname="MainKtTest" time="0.0"/>
   <testcase name="normal_parameters_for_the_second_transfer" classname="MainKtTest" time="0.001"/>
   <testcase name="limit_exceeded_with_VKPay" classname="MainKtTest" time="0.0"/>
-  <testcase name="calculate_commission_when_transfer_8_000_000_and_last_transfer_100_000_000_type_card_Mir" classname="MainKtTest" time="0.0"/>
-  <testcase name="limit_exceeded_normal_status_another_card" classname="MainKtTest" time="0.001"/>
+  <testcase name="calculate_commission_when_transfer_8_000_000_and_last_transfer_100_000_000_type_card_Mir" classname="MainKtTest" time="0.001"/>
+  <testcase name="limit_exceeded_normal_status_another_card" classname="MainKtTest" time="0.0"/>
   <testcase name="limit_exceeded_normal_status_VKPay" classname="MainKtTest" time="0.0"/>
-  <testcase name="calculate_commission_when_transfer_100_000_and_last_transfer_10_000_type_card_Mastercard" classname="MainKtTest" time="0.0"/>
+  <testcase name="calculate_commission_when_transfer_100_000_and_last_transfer_10_000_type_card_Mastercard" classname="MainKtTest" time="0.001"/>
   <testcase name="calculate_commission_mastercard_or_maestro_when_count_1_000" classname="MainKtTest" time="0.0"/>
   <testcase name="calculate_commission_VKPay_when_count_1256" classname="MainKtTest" time="0.0"/>
   <testcase name="calculate_commission_when_transfer_100_000_000_and_last_transfer_10_000_type_card_Mastercard" classname="MainKtTest" time="0.001"/>
   <testcase name="limit_exceeded_with_another" classname="MainKtTest" time="0.0"/>
   <testcase name="calculate_commission_another_card" classname="MainKtTest" time="0.001"/>
   <testcase name="calculate_commission_when_transfer_10_000_000_and_last_transfer_10_000_type_card_Visa" classname="MainKtTest" time="0.001"/>
-  <testcase name="calculate_commission_when_transfer_100_000_000_and_last_transfer_10_000_type_card_Mir" classname="MainKtTest" time="0.0"/>
+  <testcase name="calculate_commission_when_transfer_100_000_000_and_last_transfer_10_000_type_card_Mir" classname="MainKtTest" time="0.001"/>
   <testcase name="show_ending_when_kopecks_12" classname="MainKtTest" time="0.0"/>
   <testcase name="show_ending_when_kopecks_33" classname="MainKtTest" time="0.0"/>
-  <testcase name="abnormal_parameters_for_the_first_transfer" classname="MainKtTest" time="0.001"/>
+  <testcase name="abnormal_parameters_for_the_first_transfer" classname="MainKtTest" time="0.0"/>
   <testcase name="calculate_commission_when_transfer_10_000_and_last_transfer_0_type_card_empty" classname="MainKtTest" time="0.0"/>
   <testcase name="calculate_commission_when_transfer_100_000_000_and_last_transfer_0_type_card_Mastercard" classname="MainKtTest" time="0.0"/>
   <testcase name="calculate_commission_Visa_and_Mir_when_count_3_000_000" classname="MainKtTest" time="0.0"/>
   <testcase name="calculate_commission_when_transfer_8_000_000_and_last_transfer_10_000_type_card_Mastercard" classname="MainKtTest" time="0.001"/>
   <testcase name="limit_exceeded_with_totalTransferred_min_and_another_card" classname="MainKtTest" time="0.0"/>
   <testcase name="limit_exceeded_with_totalTransferredVK_max" classname="MainKtTest" time="0.0"/>
-  <testcase name="limit_exceeded_with_totalTransferredVK_min" classname="MainKtTest" time="0.0"/>
+  <testcase name="limit_exceeded_with_totalTransferredVK_min" classname="MainKtTest" time="0.001"/>
   <testcase name="calculate_commission_when_transfer_8_000_000_and_last_transfer_10_000_type_card_Mir" classname="MainKtTest" time="0.0"/>
   <testcase name="calculate_commission_when_transfer_10_000_and_last_transfer_0_type_card_Visa" classname="MainKtTest" time="0.0"/>
-  <testcase name="abnormal_parameters_for_the_second_transfer" classname="MainKtTest" time="0.001"/>
+  <testcase name="abnormal_parameters_for_the_second_transfer" classname="MainKtTest" time="0.004">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;[Тут ошибка]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[Тут ошибка]&gt; but was:&lt;[]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at MainKtTest.abnormal_parameters_for_the_second_transfer(MainKtTest.kt:14)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:63)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy5.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:121)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+</failure>
+  </testcase>
   <testcase name="calculate_commission_Visa_and_Mir_when_count_1_000" classname="MainKtTest" time="0.0"/>
   <testcase name="calculate_commission_when_transfer_8_000_000_and_last_transfer_100_000_000_type_card_Mastercard" classname="MainKtTest" time="0.001"/>
   <testcase name="limit_exceeded_with_totalTransferred_max_and_another_card" classname="MainKtTest" time="0.0"/>
